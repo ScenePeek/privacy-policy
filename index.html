@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScenePeek Privacy Policy</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --background-color: #fff;
+            --content-background: #f5f5f7;
+            --text-color: #444;
+            --link-color: #0066cc;
+            --max-width: 800px;
+        }
+
+        html.dark {
+            --primary-color: #f5f5f7;
+            --background-color: #1a1a1a;
+            --content-background: #2d2d2d;
+            --text-color: #e0e0e0;
+            --link-color: #66b3ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Separate transitions for background only */
+        body, .container, .theme-switch {
+            transition: background-color 0.3s ease;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .theme-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .theme-switch:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px;
+            background-color: var(--content-background);
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 25px 0 15px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .last-updated {
+            color: var(--text-color);
+            font-style: italic;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--text-color);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .theme-switch {
+                top: 10px;
+                right: 10px;
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-switch" onclick="toggleTheme()">🌓</button>
+
+            <div class="container">
+        <h1>Privacy Policy</h1>
+
+        <p class="last-updated">Effective as of January 15, 2025</p>
+
+        <div class="section">
+            <p>Welcome to ScenePeek. This privacy policy explains how we collect, use, and protect your information when you use our mobile application (hereby referred to as "Application"). Our application is provided as an Open Source service and is intended for use "AS IS".</p>
+        </div>
+
+        <div class="section">
+            <h2>Information Collection and Use</h2>
+            <p>We collect information when you download and use our Application. This information may include:</p>
+            <ul>
+                <li>Your device's Internet Protocol address (e.g. IP address)</li>
+                <li>The pages of the Application that you visit, the time and date of your visit, and the time spent on those pages</li>
+                <li>The time spent on the Application</li>
+                <li>The operating system you use on your mobile device</li>
+            </ul>
+            <p>We collect your device's location to provide you with a better experience in the following ways:</p>
+            <ul>
+                <li>Geolocation Services: We utilize location data to provide features such as personalized content, relevant recommendations, and location-based services</li>
+                <li>Analytics and Improvements: We use aggregated and anonymized location data to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application</li>
+                <li>Third-Party Services: We may periodically transmit anonymized location data to external services to help us enhance the Application and optimize our offerings</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>TheMovieDB API Usage</h2>
+            <p>Our Application utilizes TheMovieDB (TMDB) API as a core service to provide movie and TV show information. Users should be aware that:</p>
+            <ul>
+                <li>We retrieve and display content (including but not limited to movie information, images, ratings, and descriptions) from TheMovieDB's database</li>
+                <li>User interactions with TMDB content may be logged for functionality purposes</li>
+                <li>All TMDB content is subject to TheMovieDB's own terms of service and privacy policy</li>
+                <li>Our Application's main operations include searching, browsing, and displaying movie and TV show information sourced from TMDB</li>
+            </ul>
+            <p>For more information about TheMovieDB's data handling practices, please visit <a href="https://www.themoviedb.org/privacy-policy">TMDB's Privacy Policy</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Third Party Access</h2>
+            <p>We only transmit aggregated, anonymized data periodically to external services to help us improve our Application and services. We may share your information with third parties as described in this privacy statement.</p>
+            <p>Please note that our Application utilizes third-party services that have their own Privacy Policies about handling data. Below are the links to the Privacy Policies of the third-party service providers we use:</p>
+            <ul>
+                <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
+                <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
+                <li><a href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a></li>
+                <li><a href="https://www.themoviedb.org/privacy-policy">TheMovieDB (TMDB)</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Opt-Out Rights</h2>
+            <p>You can stop all collection of information by uninstalling our Application. You may use the standard uninstall processes available through your mobile device or via the mobile application marketplace or network.</p>
+        </div>
+
+        <div class="section">
+            <h2>Data Retention Policy</h2>
+            <p>We retain user-provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like us to delete your provided data, please contact us at <a href="mailto:scenepeek@andreolas.slmail.me">scenepeek@andreolas.slmail.me</a> and we will respond within a reasonable time.</p>
+        </div>
+
+        <div class="section">
+            <h2>Children</h2>
+            <p>We do not knowingly collect or solicit data from children under 13 years of age. Our Application does not address anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us at <a href="mailto:scenepeek@andreolas.slmail.me">scenepeek@andreolas.slmail.me</a> so we can take necessary actions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Security</h2>
+            <p>We are committed to protecting the confidentiality of your information. We implement physical, electronic, and procedural safeguards to protect the information we process and maintain.</p>
+        </div>
+
+        <div class="section">
+            <h2>Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. If we make any changes, we will notify you by revising the "Last updated" date at the top of this policy. We encourage you to review this policy periodically for any changes to stay informed about how we protect your information.</p>
+        </div>
+
+        <div class="section">
+            <h2>Your Consent</h2>
+            <p>By using our Application, you consent to the processing of your information as described in this Privacy Policy and any updates we make to it.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about our privacy practices or this policy, please contact us at <a href="mailto:scenepeek@andreolas.slmail.me">scenepeek@andreolas.slmail.me</a>.</p>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (html.className === 'light') {
+                html.className = 'dark';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.className = 'light';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.className = savedTheme;
+    </script>
+</body>
+</html>
