@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ScenePeek</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on ScenePeek</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Effective as of January 15, 2025&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;welcome&#34;&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;Welcome to ScenePeek. This privacy policy explains how we collect, use, and protect your information when you use our mobile application (hereby referred to as &amp;ldquo;Application&amp;rdquo;). Our application is provided as an Open Source service and is intended for use &amp;ldquo;AS IS&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;information-collection-and-use&#34;&gt;Information Collection and Use&lt;/h2&gt;
+&lt;p&gt;We collect information when you download and use our Application. This information may include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your device&amp;rsquo;s Internet Protocol address (e.g. IP address)&lt;/li&gt;
+&lt;li&gt;The pages of the Application that you visit, the time and date of your visit, and the time spent on those pages&lt;/li&gt;
+&lt;li&gt;The time spent on the Application&lt;/li&gt;
+&lt;li&gt;The operating system you use on your mobile device&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We collect your device&amp;rsquo;s location to provide you with a better experience in the following ways:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
