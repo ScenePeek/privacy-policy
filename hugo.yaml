@@ -1,0 +1,28 @@
+baseURL: https://scenepeek.app/
+languageCode: en-us
+title: ScenePeek
+theme: PaperMod
+params:
+  profileMode:
+    enabled: true
+    title: ScenePeek
+    subTitle: |
+      An app to help you discover and track movies and shows, syncing with [TMDB](https://themoviedb.org) & [Seerr](https://github.com/seerr-team/seerr).   
+      Available on iOS & Android.
+    imageUrl: /scenepeek.png
+    imageWidth: 68
+    imageHeight: 68
+  hideFooter: true
+  assets:
+    favicon: "/favicon.png"
+  socialIcons:
+    - name: GitHub
+      url: https://github.com/Divinelink/scenepeek-android
+    #- name: KoFi
+    #  url: https://ko-fi.com/
+    - name: Mastodon
+      url: https://fosstodon.org/@scenepeek
+    - name: Matrix
+      url: https://matrix.to/#/#scenepeek:matrix.org
+    - name: Email
+      url: mailto:contact@scenepeek.app
