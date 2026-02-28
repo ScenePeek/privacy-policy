@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.divinelink.scenepeek",
+      "sha256_cert_fingerprints": [
+        "3A:73:14:A1:29:8A:2D:CA:F3:DA:D1:24:B7:65:0C:96:37:DC:AE:FB:5F:57:90:04:9F:D4:76:A3:51:8E:A1:F1"
+      ]
+    }
+  }
+]
