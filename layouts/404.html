@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Page not found</title>
+  <title>{{ if .Title }}{{ .Title }}{{ else }}Page Not Found{{ end }}</title>
   <style>
     body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #f9f9f9; }
     .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); text-align: center; max-width: 420px; width: 100%; }
@@ -33,30 +33,30 @@
   <script>
     const path = window.location.pathname;
 
-    
-    
-    
-    
-    
-    
-    
-    
+    // -----------------------------------------------------------
+    // Define your redirect rules here.
+    // Each rule has:
+    //   match   — a RegExp tested against the path
+    //   appUrl  — deep link URI to attempt opening the app
+    //   webUrl  — fallback URL if the app isn't installed
+    //   label   — human-readable description shown while redirecting
+    // -----------------------------------------------------------
     const rules = [
       {
         match: /^\/movie\/(\d+)/,
         appUrl:  (m) => `scenepeek://movie/${m[1]}`,
         webUrl:  (m) => `https://www.themoviedb.org/movie/${m[1]}`,
-        label:   "Opening movie in the app…",
+        label:   "Opening movie in the app",
       },
       {
         match: /^\/tv\/(\d+)/,
         appUrl:  (m) => `scenepeek://tv/${m[1]}`,
         webUrl:  (m) => `https://www.themoviedb.org/tv/${m[1]}`,
-        label:   "Opening TV show in the app…",
+        label:   "Opening show in the app",
       },
-      
+      // Add more rules here as needed
     ];
-    
+    // -----------------------------------------------------------
 
     const matchedRule = rules.reduce((found, rule) => {
       if (found) return found;
@@ -69,14 +69,14 @@
       const appUrl  = rule.appUrl(m);
       const webUrl  = rule.webUrl(m);
 
-      
+      // Show deep link UI
       document.getElementById("deeplink-ui").style.display = "block";
       document.getElementById("deeplink-description").textContent = rule.label;
 
       const fallbackLink = document.getElementById("fallback-link");
       fallbackLink.href = webUrl;
 
-      
+      // Attempt to open the app; redirect to web after timeout
       const timer = setTimeout(() => window.location.replace(webUrl), 1500);
       window.location.href = appUrl;
 
@@ -84,7 +84,7 @@
         if (document.hidden) clearTimeout(timer);
       });
     } else {
-      
+      // Show normal 404
       document.getElementById("notfound-ui").style.display = "block";
     }
   </script>
