@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "6NU6XQB8GP.com.divinelink.scenepeek",
+        "paths": [
+          "/movie/*",
+          "/tv/*",
+          "/person/*",
+          "/list/*",
+          "/collection/*"
+        ]
+      }
+    ]
+  }
+}
