@@ -3,7 +3,24 @@
     "apps": [],
     "details": [
       {
-        "appID": "6NU6XQB8GP.com.divinelink.scenepeek",
+        "appIDs": ["6NU6XQB8GP.com.divinelink.scenepeek"],
+        "components": [
+          {
+            "/": "/movie/*"
+          },
+          {
+            "/": "/tv/*"
+          },
+          {
+            "/": "/person/*"
+          },
+          {
+            "/": "/list/*"
+          },
+          {
+            "/": "/collection/*"
+          }
+        ],
         "paths": [
           "/movie/*",
           "/tv/*",
@@ -13,5 +30,11 @@
         ]
       }
     ]
+  },
+  "webcredentials": {
+    "apps": ["6NU6XQB8GP.com.divinelink.scenepeek"]
+  },
+  "activitycontinuation": {
+    "apps": ["6NU6XQB8GP.com.divinelink.scenepeek"]
   }
 }
